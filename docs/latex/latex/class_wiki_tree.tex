@@ -1,0 +1,120 @@
+\doxysection{Wiki\+Tree Class Reference}
+\hypertarget{class_wiki_tree}{}\label{class_wiki_tree}\index{WikiTree@{WikiTree}}
+
+
+\doxylink{_wiki_tree_8h_source}{Wiki\+Tree.\+h} -\/ interface for the \doxylink{class_wiki_tree}{Wiki\+Tree} class.  
+
+
+
+
+{\ttfamily \#include $<$Wiki\+Tree.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_wiki_tree_a358754081bea3e400e1a59167f1f3e68}{Wiki\+Tree}} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}croot)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_wiki_tree}{Wiki\+Tree} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_wiki_tree_a9f76adbcbaddfe2a2ac8c743b3783148}{get\+Root}} () const
+\begin{DoxyCompactList}\small\item\em getter for the root member variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_wiki_tree_a9d8157a44a30feee09c8a4dc865dad09}{add\+Edge}} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}cparent, \mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}cchild)
+\begin{DoxyCompactList}\small\item\em method to add edge to \doxylink{class_wiki_tree}{Wiki\+Tree}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_wiki_tree_ad330f5e20bd2d90d35a6dfb94efc8fea}{build\+Wiki\+Tree}} (const std\+::string \&stop\+Url)
+\begin{DoxyCompactList}\small\item\em Builds a \doxylink{class_wiki_tree}{Wiki\+Tree} from the root member variable until a \doxylink{class_vertex}{Vertex} with a specified key value is found. Returns the \doxylink{class_vertex}{Vertex}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_wiki_tree_a565ff5fafda9f67341efcc2982905550}{\texorpdfstring{$\sim$}{\string~}\+Wiki\+Tree}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_wiki_tree}{Wiki\+Tree} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{_wiki_tree_8h_source}{Wiki\+Tree.\+h} -\/ interface for the \doxylink{class_wiki_tree}{Wiki\+Tree} class. 
+
+\hypertarget{class_wiki_tree_autotoc_md35}{}\doxysubsubsection{\texorpdfstring{File\+: Wiki\+Tree.\+h}{File\+: Wiki\+Tree.\+h}}\label{class_wiki_tree_autotoc_md35}
+This file contains the interface for the \doxylink{class_wiki_tree}{Wiki\+Tree} class. A \doxylink{class_wiki_tree}{Wiki\+Tree} represent a graph of Wiki\+Pedia pages. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_wiki_tree_a358754081bea3e400e1a59167f1f3e68}\index{WikiTree@{WikiTree}!WikiTree@{WikiTree}}
+\index{WikiTree@{WikiTree}!WikiTree@{WikiTree}}
+\doxysubsubsection{\texorpdfstring{WikiTree()}{WikiTree()}}
+{\footnotesize\ttfamily \label{class_wiki_tree_a358754081bea3e400e1a59167f1f3e68} 
+Wiki\+Tree\+::\+Wiki\+Tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{croot}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_wiki_tree}{Wiki\+Tree} class. 
+
+\hypertarget{class_wiki_tree_autotoc_md36}{}\doxysubsubsection{\texorpdfstring{Usage\+: Wiki\+Tree(\+Vertex \texorpdfstring{$\ast$}{*}croot);}{Usage\+: Wiki\+Tree(\+Vertex \texorpdfstring{$\ast$}{*}croot);}}\label{class_wiki_tree_autotoc_md36}
+
+\begin{DoxyParams}{Parameters}
+{\em croot} & a \doxylink{class_vertex}{Vertex} \texorpdfstring{$\ast$}{*} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_wiki_tree_a565ff5fafda9f67341efcc2982905550}\index{WikiTree@{WikiTree}!````~WikiTree@{\texorpdfstring{$\sim$}{\string~}WikiTree}}
+\index{````~WikiTree@{\texorpdfstring{$\sim$}{\string~}WikiTree}!WikiTree@{WikiTree}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}WikiTree()}{\string~WikiTree()}}
+{\footnotesize\ttfamily \label{class_wiki_tree_a565ff5fafda9f67341efcc2982905550} 
+Wiki\+Tree\+::\texorpdfstring{$\sim$}{\string~}\+Wiki\+Tree (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for the \doxylink{class_wiki_tree}{Wiki\+Tree} class. 
+
+\hypertarget{class_wiki_tree_autotoc_md40}{}\doxysubsubsection{\texorpdfstring{Usage\+: \texorpdfstring{$\sim$}{\string~}\+Wiki\+Tree();}{Usage\+: \texorpdfstring{$\sim$}{\string~}\+Wiki\+Tree();}}\label{class_wiki_tree_autotoc_md40}
+No parameters. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_wiki_tree_a9d8157a44a30feee09c8a4dc865dad09}\index{WikiTree@{WikiTree}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!WikiTree@{WikiTree}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily \label{class_wiki_tree_a9d8157a44a30feee09c8a4dc865dad09} 
+void Wiki\+Tree\+::add\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{cparent}{, }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{cchild}{}\end{DoxyParamCaption})}
+
+
+
+method to add edge to \doxylink{class_wiki_tree}{Wiki\+Tree}. 
+
+\hypertarget{class_wiki_tree_autotoc_md38}{}\doxysubsubsection{\texorpdfstring{Usage\+: add\+Edge(\+Vertex \texorpdfstring{$\ast$}{*}cparent, Vertex \texorpdfstring{$\ast$}{*}cchild);}{Usage\+: add\+Edge(\+Vertex \texorpdfstring{$\ast$}{*}cparent, Vertex \texorpdfstring{$\ast$}{*}cchild);}}\label{class_wiki_tree_autotoc_md38}
+
+\begin{DoxyParams}{Parameters}
+{\em cparent} & a \doxylink{class_vertex}{Vertex} \texorpdfstring{$\ast$}{*} \\
+\hline
+{\em cchild} & a \doxylink{class_vertex}{Vertex} \texorpdfstring{$\ast$}{*} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_wiki_tree_ad330f5e20bd2d90d35a6dfb94efc8fea}\index{WikiTree@{WikiTree}!buildWikiTree@{buildWikiTree}}
+\index{buildWikiTree@{buildWikiTree}!WikiTree@{WikiTree}}
+\doxysubsubsection{\texorpdfstring{buildWikiTree()}{buildWikiTree()}}
+{\footnotesize\ttfamily \label{class_wiki_tree_ad330f5e20bd2d90d35a6dfb94efc8fea} 
+\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} Wiki\+Tree\+::build\+Wiki\+Tree (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{stop\+Url}{}\end{DoxyParamCaption})}
+
+
+
+Builds a \doxylink{class_wiki_tree}{Wiki\+Tree} from the root member variable until a \doxylink{class_vertex}{Vertex} with a specified key value is found. Returns the \doxylink{class_vertex}{Vertex}. 
+
+\hypertarget{class_wiki_tree_autotoc_md39}{}\doxysubsubsection{\texorpdfstring{Usage\+: Vertex \texorpdfstring{$\ast$}{*}end = build\+Wiki\+Tree(const std\+::string \&stop\+Url);}{Usage\+: Vertex \texorpdfstring{$\ast$}{*}end = build\+Wiki\+Tree(const std\+::string \&stop\+Url);}}\label{class_wiki_tree_autotoc_md39}
+Function builds a \doxylink{class_wiki_tree}{Wiki\+Tree}, a graph of \doxylink{class_vertex}{Vertex} objects with Wikipedia page urls as their key values. While building searches for a \doxylink{class_vertex}{Vertex} with stop\+Url as its key value. 
+\begin{DoxyParams}{Parameters}
+{\em stop\+Url} & a reference to a const std\+::string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_vertex}{Vertex} \texorpdfstring{$\ast$}{*}end, a pointer to the \doxylink{class_vertex}{Vertex} with key variable of stop\+Url. If \doxylink{class_vertex}{Vertex} is not found, returns a pointer to the root \doxylink{class_vertex}{Vertex}. 
+\end{DoxyReturn}
+\Hypertarget{class_wiki_tree_a9f76adbcbaddfe2a2ac8c743b3783148}\index{WikiTree@{WikiTree}!getRoot@{getRoot}}
+\index{getRoot@{getRoot}!WikiTree@{WikiTree}}
+\doxysubsubsection{\texorpdfstring{getRoot()}{getRoot()}}
+{\footnotesize\ttfamily \label{class_wiki_tree_a9f76adbcbaddfe2a2ac8c743b3783148} 
+\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} Wiki\+Tree\+::get\+Root (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+getter for the root member variable. 
+
+\hypertarget{class_wiki_tree_autotoc_md37}{}\doxysubsubsection{\texorpdfstring{Usage\+: Vertex \texorpdfstring{$\ast$}{*}root = get\+Root();}{Usage\+: Vertex \texorpdfstring{$\ast$}{*}root = get\+Root();}}\label{class_wiki_tree_autotoc_md37}
+No parameters. \begin{DoxyReturn}{Returns}
+\doxylink{class_vertex}{Vertex} \texorpdfstring{$\ast$}{*}root, the root variable for a \doxylink{class_wiki_tree}{Wiki\+Tree} object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Wiki\+Tree.\+h\item 
+Wiki\+Tree.\+cpp\end{DoxyCompactItemize}

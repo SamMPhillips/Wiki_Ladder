@@ -1,0 +1,113 @@
+\doxysection{Parser Class Reference}
+\hypertarget{class_parser}{}\label{class_parser}\index{Parser@{Parser}}
+
+
+\doxylink{parser_8h_source}{parser.\+h} -\/ interface for the \doxylink{class_parser}{Parser} class  
+
+
+
+
+{\ttfamily \#include $<$parser.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_parser_a114f1f446e163731fab412170edc75fd}{Parser}} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}cpage)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_parser}{Parser} class. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_parser_a513c6ee6d8af3fd911bfc9f5b2a478f0}{search\+Wiki\+Page}} () const
+\begin{DoxyCompactList}\small\item\em Identifies the links in the paragraph portions of a Wikipedia page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parser_a45cff34032590b504e0cebdfd07594c3}{set\+Page}} (\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}cpage)
+\begin{DoxyCompactList}\small\item\em setter for the page member variable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_parser_a5bf4a8e4cd14c2d8a33055aed6f2ae3a}{get\+Page}} () const
+\begin{DoxyCompactList}\small\item\em getter for the page member variable. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_parser_a3e658b5917a93a3ef648050d060e3a93}{\texorpdfstring{$\sim$}{\string~}\+Parser}} ()
+\begin{DoxyCompactList}\small\item\em destructor for the \doxylink{class_parser}{Parser} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{parser_8h_source}{parser.\+h} -\/ interface for the \doxylink{class_parser}{Parser} class 
+
+\hypertarget{class_parser_autotoc_md1}{}\doxysubsubsection{\texorpdfstring{File\+: parser.\+h}{File\+: parser.\+h}}\label{class_parser_autotoc_md1}
+This file contains the interface for the \doxylink{class_parser}{Parser} class. Class pulls the html file for a Wikipedia page identifies additional links in the paragraph sections of a Wikipedia page. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_parser_a114f1f446e163731fab412170edc75fd}\index{Parser@{Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily \label{class_parser_a114f1f446e163731fab412170edc75fd} 
+Parser\+::\+Parser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{cpage}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_parser}{Parser} class. 
+
+\hypertarget{class_parser_autotoc_md2}{}\doxysubsubsection{\texorpdfstring{Usage\+: Parser(\+Vertex \texorpdfstring{$\ast$}{*}cpage);}{Usage\+: Parser(\+Vertex \texorpdfstring{$\ast$}{*}cpage);}}\label{class_parser_autotoc_md2}
+
+\begin{DoxyParams}{Parameters}
+{\em cpage} & a \doxylink{class_vertex}{Vertex} \texorpdfstring{$\ast$}{*} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_parser_a3e658b5917a93a3ef648050d060e3a93}\index{Parser@{Parser}!````~Parser@{\texorpdfstring{$\sim$}{\string~}Parser}}
+\index{````~Parser@{\texorpdfstring{$\sim$}{\string~}Parser}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Parser()}{\string~Parser()}}
+{\footnotesize\ttfamily \label{class_parser_a3e658b5917a93a3ef648050d060e3a93} 
+Parser\+::\texorpdfstring{$\sim$}{\string~}\+Parser (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+destructor for the \doxylink{class_parser}{Parser} class. 
+
+\hypertarget{class_parser_autotoc_md6}{}\doxysubsubsection{\texorpdfstring{Usage\+: \texorpdfstring{$\sim$}{\string~}\+Parser();}{Usage\+: \texorpdfstring{$\sim$}{\string~}\+Parser();}}\label{class_parser_autotoc_md6}
+No parameters. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_parser_a5bf4a8e4cd14c2d8a33055aed6f2ae3a}\index{Parser@{Parser}!getPage@{getPage}}
+\index{getPage@{getPage}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{getPage()}{getPage()}}
+{\footnotesize\ttfamily \label{class_parser_a5bf4a8e4cd14c2d8a33055aed6f2ae3a} 
+\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*} Parser\+::get\+Page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+getter for the page member variable. 
+
+\hypertarget{class_parser_autotoc_md5}{}\doxysubsubsection{\texorpdfstring{Usage Vertex \texorpdfstring{$\ast$}{*}page = get\+Page();}{Usage Vertex \texorpdfstring{$\ast$}{*}page = get\+Page();}}\label{class_parser_autotoc_md5}
+No parametrs. \begin{DoxyReturn}{Returns}
+\doxylink{class_vertex}{Vertex} {\itshape page, the \doxylink{class_vertex}{Vertex}} variable for a \doxylink{class_parser}{Parser} object. 
+\end{DoxyReturn}
+\Hypertarget{class_parser_a513c6ee6d8af3fd911bfc9f5b2a478f0}\index{Parser@{Parser}!searchWikiPage@{searchWikiPage}}
+\index{searchWikiPage@{searchWikiPage}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{searchWikiPage()}{searchWikiPage()}}
+{\footnotesize\ttfamily \label{class_parser_a513c6ee6d8af3fd911bfc9f5b2a478f0} 
+std\+::vector$<$ std\+::string $>$ Parser\+::search\+Wiki\+Page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Identifies the links in the paragraph portions of a Wikipedia page. 
+
+\hypertarget{class_parser_autotoc_md3}{}\doxysubsubsection{\texorpdfstring{Usage\+: std\+::vector$<$std\+::string$>$ links = search\+Wiki\+Page();}{Usage\+: std\+::vector$<$std\+::string$>$ links = search\+Wiki\+Page();}}\label{class_parser_autotoc_md3}
+No parameters. \begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::string$>$ links, a string vector containing the urls of other Wikipedia page links in the paragraph sections of the key value of the \doxylink{class_vertex}{Vertex} \texorpdfstring{$\ast$}{*} member variable of the \doxylink{class_parser}{Parser} object. 
+\end{DoxyReturn}
+\Hypertarget{class_parser_a45cff34032590b504e0cebdfd07594c3}\index{Parser@{Parser}!setPage@{setPage}}
+\index{setPage@{setPage}!Parser@{Parser}}
+\doxysubsubsection{\texorpdfstring{setPage()}{setPage()}}
+{\footnotesize\ttfamily \label{class_parser_a45cff34032590b504e0cebdfd07594c3} 
+void Parser\+::set\+Page (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} \texorpdfstring{$\ast$}{*}}]{cpage}{}\end{DoxyParamCaption})}
+
+
+
+setter for the page member variable. 
+
+\hypertarget{class_parser_autotoc_md4}{}\doxysubsubsection{\texorpdfstring{Usage\+: set\+Page(\+Vertex \texorpdfstring{$\ast$}{*}cpage);}{Usage\+: set\+Page(\+Vertex \texorpdfstring{$\ast$}{*}cpage);}}\label{class_parser_autotoc_md4}
+
+\begin{DoxyParams}{Parameters}
+{\em cpage} & a \doxylink{class_vertex}{Vertex} \texorpdfstring{$\ast$}{*} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+parser.\+h\item 
+parser.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+\doxysection{Wiki\+Tree.\+h}
+\hypertarget{_wiki_tree_8h_source}{}\label{_wiki_tree_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ WIKITREE\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ WIKITREE\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}vertex.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}cpr/cpr.h"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_wiki_tree}{WikiTree}}\ \{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *\ root;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::vector<Vertex\ *>\ vertexList;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wiki_tree_a358754081bea3e400e1a59167f1f3e68}{WikiTree}}(\mbox{\hyperlink{class_vertex}{Vertex}}\ *croot);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *\ \mbox{\hyperlink{class_wiki_tree_a9f76adbcbaddfe2a2ac8c743b3783148}{getRoot}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_wiki_tree_a9d8157a44a30feee09c8a4dc865dad09}{addEdge}}(\mbox{\hyperlink{class_vertex}{Vertex}}\ *cparent,\ \mbox{\hyperlink{class_vertex}{Vertex}}\ *cchild);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *\ \mbox{\hyperlink{class_wiki_tree_ad330f5e20bd2d90d35a6dfb94efc8fea}{buildWikiTree}}(\textcolor{keyword}{const}\ std::string\ \&stopUrl);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_wiki_tree_a565ff5fafda9f67341efcc2982905550}{\string~WikiTree}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//WIKITREE\_H}}
+
+\end{DoxyCode}

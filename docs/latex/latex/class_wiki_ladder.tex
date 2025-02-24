@@ -1,0 +1,144 @@
+\doxysection{Wiki\+Ladder Class Reference}
+\hypertarget{class_wiki_ladder}{}\label{class_wiki_ladder}\index{WikiLadder@{WikiLadder}}
+
+
+\doxylink{_wiki_ladder_8h_source}{Wiki\+Ladder.\+h} -\/ interface for the \doxylink{class_wiki_ladder}{Wiki\+Ladder} class.  
+
+
+
+
+{\ttfamily \#include $<$Wiki\+Ladder.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_wiki_ladder_a0f86b58c4aee3d66c6fbd0563fcd3b01}{Wiki\+Ladder}} (const std\+::string \&cstart, const std\+::string \&cstop)
+\begin{DoxyCompactList}\small\item\em constructor for the \doxylink{class_wiki_ladder}{Wiki\+Ladder} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_wiki_ladder_ad499ebac0c4ff619dce05a748d4178af}{set\+Stop}} (const std\+::string \&new\+Stop)
+\begin{DoxyCompactList}\small\item\em setter for the stop member variable. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_wiki_ladder_ae96718bf8a0915fbda37db25f6a9f2bb}{get\+Stop}} ()
+\begin{DoxyCompactList}\small\item\em getter for the stop member variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_wiki_ladder_a7a4da0545ff03d6a938260657382bc91}{Play}} ()
+\begin{DoxyCompactList}\small\item\em Builds a \doxylink{class_wiki_tree}{Wiki\+Tree} from start to a \doxylink{class_vertex}{Vertex} with stop as its key values. Sets path and path\+Length member variables. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_wiki_ladder_a61ca5881815f377e67505a816d6820b0}{get\+Path\+Length}} () const
+\begin{DoxyCompactList}\small\item\em getter for the path length member variable; \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_wiki_ladder_a4fdee271ef5dadc4e43ba15a3bdedf05}{get\+Path}} () const
+\begin{DoxyCompactList}\small\item\em getter for the path member variable; \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_wiki_ladder_ab4d54b2c8a24c0d7ecd3a5c8616de63b}{\texorpdfstring{$\sim$}{\string~}\+Wiki\+Ladder}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_wiki_ladder}{Wiki\+Ladder} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{_wiki_ladder_8h_source}{Wiki\+Ladder.\+h} -\/ interface for the \doxylink{class_wiki_ladder}{Wiki\+Ladder} class. 
+
+\hypertarget{class_wiki_ladder_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{File\+: Wiki\+Ladder.\+h}{File\+: Wiki\+Ladder.\+h}}\label{class_wiki_ladder_autotoc_md27}
+Class to create and play the \doxylink{class_wiki_ladder}{Wiki\+Ladder} game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_wiki_ladder_a0f86b58c4aee3d66c6fbd0563fcd3b01}\index{WikiLadder@{WikiLadder}!WikiLadder@{WikiLadder}}
+\index{WikiLadder@{WikiLadder}!WikiLadder@{WikiLadder}}
+\doxysubsubsection{\texorpdfstring{WikiLadder()}{WikiLadder()}}
+{\footnotesize\ttfamily \label{class_wiki_ladder_a0f86b58c4aee3d66c6fbd0563fcd3b01} 
+Wiki\+Ladder\+::\+Wiki\+Ladder (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cstart}{, }\item[{const std\+::string \&}]{cstop}{}\end{DoxyParamCaption})}
+
+
+
+constructor for the \doxylink{class_wiki_ladder}{Wiki\+Ladder} class. 
+
+\hypertarget{class_wiki_ladder_autotoc_md28}{}\doxysubsubsection{\texorpdfstring{Usage\+: Wiki\+Ladder(const std\+::string \& cstart, const std\+::string \& cstop);}{Usage\+: Wiki\+Ladder(const std\+::string \& cstart, const std\+::string \& cstop);}}\label{class_wiki_ladder_autotoc_md28}
+
+\begin{DoxyParams}{Parameters}
+{\em cstart} & a reference to a const std\+::string. \\
+\hline
+{\em cstop} & a reference to a const std\+::string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_wiki_ladder_ab4d54b2c8a24c0d7ecd3a5c8616de63b}\index{WikiLadder@{WikiLadder}!````~WikiLadder@{\texorpdfstring{$\sim$}{\string~}WikiLadder}}
+\index{````~WikiLadder@{\texorpdfstring{$\sim$}{\string~}WikiLadder}!WikiLadder@{WikiLadder}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}WikiLadder()}{\string~WikiLadder()}}
+{\footnotesize\ttfamily \label{class_wiki_ladder_ab4d54b2c8a24c0d7ecd3a5c8616de63b} 
+Wiki\+Ladder\+::\texorpdfstring{$\sim$}{\string~}\+Wiki\+Ladder (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor for the \doxylink{class_wiki_ladder}{Wiki\+Ladder} class. 
+
+\hypertarget{class_wiki_ladder_autotoc_md34}{}\doxysubsubsection{\texorpdfstring{Usage\+: \texorpdfstring{$\sim$}{\string~}\+Wiki\+Ladder();}{Usage\+: \texorpdfstring{$\sim$}{\string~}\+Wiki\+Ladder();}}\label{class_wiki_ladder_autotoc_md34}
+No parameters. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_wiki_ladder_a4fdee271ef5dadc4e43ba15a3bdedf05}\index{WikiLadder@{WikiLadder}!getPath@{getPath}}
+\index{getPath@{getPath}!WikiLadder@{WikiLadder}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \label{class_wiki_ladder_a4fdee271ef5dadc4e43ba15a3bdedf05} 
+std\+::vector$<$ std\+::string $>$ Wiki\+Ladder\+::get\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+getter for the path member variable; 
+
+\hypertarget{class_wiki_ladder_autotoc_md33}{}\doxysubsubsection{\texorpdfstring{Usage\+: std\+::vectors$<$std\+::string$>$ path = get\+Path();}{Usage\+: std\+::vectors$<$std\+::string$>$ path = get\+Path();}}\label{class_wiki_ladder_autotoc_md33}
+\begin{DoxyReturn}{Returns}
+std\+::vectors$<$std\+::string$>$ path, a vector of strings with the key values of the Vertices in the path between start and and a \doxylink{class_vertex}{Vertex} with stop as its key value. 
+\end{DoxyReturn}
+\Hypertarget{class_wiki_ladder_a61ca5881815f377e67505a816d6820b0}\index{WikiLadder@{WikiLadder}!getPathLength@{getPathLength}}
+\index{getPathLength@{getPathLength}!WikiLadder@{WikiLadder}}
+\doxysubsubsection{\texorpdfstring{getPathLength()}{getPathLength()}}
+{\footnotesize\ttfamily \label{class_wiki_ladder_a61ca5881815f377e67505a816d6820b0} 
+int Wiki\+Ladder\+::get\+Path\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+getter for the path length member variable; 
+
+\hypertarget{class_wiki_ladder_autotoc_md32}{}\doxysubsubsection{\texorpdfstring{Usage\+: int path\+Length = get\+Path\+Length();}{Usage\+: int path\+Length = get\+Path\+Length();}}\label{class_wiki_ladder_autotoc_md32}
+No parameters. \begin{DoxyReturn}{Returns}
+int path\+Length, the length of the path between the start \doxylink{class_vertex}{Vertex} and a \doxylink{class_vertex}{Vertex} with stop as its key value. 
+\end{DoxyReturn}
+\Hypertarget{class_wiki_ladder_ae96718bf8a0915fbda37db25f6a9f2bb}\index{WikiLadder@{WikiLadder}!getStop@{getStop}}
+\index{getStop@{getStop}!WikiLadder@{WikiLadder}}
+\doxysubsubsection{\texorpdfstring{getStop()}{getStop()}}
+{\footnotesize\ttfamily \label{class_wiki_ladder_ae96718bf8a0915fbda37db25f6a9f2bb} 
+std\+::string Wiki\+Ladder\+::get\+Stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+getter for the stop member variable. 
+
+\hypertarget{class_wiki_ladder_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{Usage\+: std\+::string stop = get\+Stop();}{Usage\+: std\+::string stop = get\+Stop();}}\label{class_wiki_ladder_autotoc_md30}
+No parameters. \begin{DoxyReturn}{Returns}
+std\+::string stop. 
+\end{DoxyReturn}
+\Hypertarget{class_wiki_ladder_a7a4da0545ff03d6a938260657382bc91}\index{WikiLadder@{WikiLadder}!Play@{Play}}
+\index{Play@{Play}!WikiLadder@{WikiLadder}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily \label{class_wiki_ladder_a7a4da0545ff03d6a938260657382bc91} 
+void Wiki\+Ladder\+::\+Play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Builds a \doxylink{class_wiki_tree}{Wiki\+Tree} from start to a \doxylink{class_vertex}{Vertex} with stop as its key values. Sets path and path\+Length member variables. 
+
+\hypertarget{class_wiki_ladder_autotoc_md31}{}\doxysubsubsection{\texorpdfstring{Usage\+: Play();}{Usage\+: Play();}}\label{class_wiki_ladder_autotoc_md31}
+No parameters. \Hypertarget{class_wiki_ladder_ad499ebac0c4ff619dce05a748d4178af}\index{WikiLadder@{WikiLadder}!setStop@{setStop}}
+\index{setStop@{setStop}!WikiLadder@{WikiLadder}}
+\doxysubsubsection{\texorpdfstring{setStop()}{setStop()}}
+{\footnotesize\ttfamily \label{class_wiki_ladder_ad499ebac0c4ff619dce05a748d4178af} 
+void Wiki\+Ladder\+::set\+Stop (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{new\+Stop}{}\end{DoxyParamCaption})}
+
+
+
+setter for the stop member variable. 
+
+\hypertarget{class_wiki_ladder_autotoc_md29}{}\doxysubsubsection{\texorpdfstring{Usage\+: set\+Stop(const std\+::string \&new\+Stop);}{Usage\+: set\+Stop(const std\+::string \&new\+Stop);}}\label{class_wiki_ladder_autotoc_md29}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Stop} & a refernce to a const std\+::string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Wiki\+Ladder.\+h\item 
+Wiki\+Ladder.\+cpp\end{DoxyCompactItemize}

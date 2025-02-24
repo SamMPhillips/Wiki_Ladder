@@ -1,0 +1,47 @@
+\chapter{CS 300 Final Project Write-\/up}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{CS 300 Final Project Write-\/up@{CS 300 Final Project Write-\/up}}
+\label{md__r_e_a_d_m_e_autotoc_md7}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md7}%
+\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysection{\texorpdfstring{Project\+: Wiki\+Ladder}{Project\+: Wiki\+Ladder}}\label{md__r_e_a_d_m_e_autotoc_md8}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysection{\texorpdfstring{Team Members\+: Elisabeth Molen and Sam Miller Phillips}{Team Members\+: Elisabeth Molen and Sam Miller Phillips}}\label{md__r_e_a_d_m_e_autotoc_md9}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{\texorpdfstring{Compile/\+Execute\+:}{Compile/\+Execute\+:}}\label{md__r_e_a_d_m_e_autotoc_md10}
+
+\begin{DoxyItemize}
+\item To use the cpr library we had to use cmake rather than a Makefile.
+\item To run things\+:
+\end{DoxyItemize}
+\begin{DoxyEnumerate}
+\item Make sure you\textquotesingle{}re in the Final\+\_\+\+Project\+\_\+\+Combined\+\_\+\+Elisabeth\+\_\+\+Sam directory.
+\item mkdir cmake\+\_\+build
+\item cd cmake\+\_\+build
+\item cmake ..
+\item cmake --build .
+\item make
+\item ./\+Final\+\_\+\+Project\+\_\+\+Combined\+\_\+\+Elisabeth\+\_\+\+Sam
+\item You should just be able to call make and ./\+Final\+Project\+\_\+\+Combined\+\_\+\+Elisabeth\+\_\+\+Sam to recompile and then run after any changes (see our Unit Tests approach for why this might be needed). Just need to make sure you\textquotesingle{}re in the cmake\+\_\+build directory.
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{\texorpdfstring{Unit Tests\+:}{Unit Tests\+:}}\label{md__r_e_a_d_m_e_autotoc_md11}
+
+\begin{DoxyItemize}
+\item Our unit tests are written in the \doxylink{class_unit_tests}{Unit\+Tests} class.
+\item Because we are using cmake, it wasn\textquotesingle{}t ideal to write a new main file to run the unit tests.
+\item We discussed with Joe that we are adding two main() functions to main.\+cpp. One is the normal main() to run the project itself. The other is the main() to run unit tests. You can comment out the one you\textquotesingle{}re not wanting to run. We are submitting with the project ready to run (i.\+e., unit test main() commented out).
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysubsection{\texorpdfstring{Notes\+:}{Notes\+:}}\label{md__r_e_a_d_m_e_autotoc_md12}
+
+\begin{DoxyItemize}
+\item To Compile and Execute\+: Use the CMake\+Lists.\+txt file to create a cmake build. As discussed with Dr. Wagner and TAs, the only way we could get the cpr library to work was to use a CMake, which is why we\textquotesingle{}re doing this instead of a Makefile. Given the amount of trouble Sam had getting the cpr library to work on her machine, there is a possibility this project may not work easily on all machines. As also discussed, we are happy to demo the code fully. Thank you again for understanding!
+\item docs folder contains the index.\+html for the doxygen comments page. ~\newline
+
+\item Screenshots folder contains some screenshots from running the program. Useful to demonstrate how the program will run on page selections that take longer to run. (Note the screenshots were taken prior to us adding the length of the path to the terminal output, but things should otherwise be the same).
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxysubsection{\texorpdfstring{Linter\+:}{Linter\+:}}\label{md__r_e_a_d_m_e_autotoc_md13}
+
+\begin{DoxyItemize}
+\item We used a CLion Project to create our final project. ~\newline
+
+\item We used the built-\/in linter for C/\+C++ in Clion, which is Clang-\/\+Tidy.
+\item Clang-\/\+Tidy is a clang based linter that is useful for programming errors including "{}style violations, interface misuse, or bugs"{} (\href{https://clang.llvm.org/extra/clang-tidy/}{\texttt{ https\+://clang.\+llvm.\+org/extra/clang-\/tidy/}})
+\item Clion displays Clang-\/\+Tidy checks in the same way as Clion\textquotesingle{}s own inspections and allowed us to quickly fix code by following the suggestions.
+\item We used the default option for Clang-\/\+Tidy checks, which includes seeing the checks as warnings in the editor. Clang-\/\+Tidy is modular by nature and allows developers to write new checks relatively easily. We felt the default checks were sufficient for our purposes. ~\newline
+
+\item The warnings were helpful in understanding how we could improve our project. One prime example was finding instances where we had forgotten to implement const correctness on a particular function.
+\item The CLion project also worked with doxygen, so it helped catch when a doxygen comment had not been properly written. 
+\end{DoxyItemize}

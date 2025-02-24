@@ -1,0 +1,192 @@
+\doxysection{utests.\+h}
+\hypertarget{utests_8h_source}{}\label{utests_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ utests\_h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ utests\_h}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <cassert>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}vertex.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}parser.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}WikiLadder.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}WikiTree.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}cpr/cpr.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ Reference:\ https://cplusplus.com/reference/cassert/assert/}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//Vertex\ Class\ Unit\ Tests}}
+\DoxyCodeLine{00017\ \textcolor{comment}{//Unit\ Tests\ 1\ -\/\ 8:}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keywordtype}{void}\ setKeyTest1()\{}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ v;}
+\DoxyCodeLine{00021\ \ \ \ \ v.\mbox{\hyperlink{class_vertex_aac338709e287836dc81a119f2cb3b7e3}{setKey}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Chicago"{}});}
+\DoxyCodeLine{00022\ \ \ \ \ assert\ (v.\mbox{\hyperlink{class_vertex_a99274bf216329158aeddb01e40cffb3f}{getKey}}()\ ==\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Chicago"{}});}
+\DoxyCodeLine{00023\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ setKeyTest2()\{}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ v;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ v.\mbox{\hyperlink{class_vertex_aac338709e287836dc81a119f2cb3b7e3}{setKey}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Boulder,\_Colorado"{}});}
+\DoxyCodeLine{00029\ \ \ \ \ assert(v.\mbox{\hyperlink{class_vertex_a99274bf216329158aeddb01e40cffb3f}{getKey}}()\ ==\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Boulder,\_Colorado"{}});}
+\DoxyCodeLine{00030\ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ getKeyTest1()\{}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ v\ (\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Kuala\_Lumpur"{}});}
+\DoxyCodeLine{00034\ \ \ \ \ assert(v.\mbox{\hyperlink{class_vertex_a99274bf216329158aeddb01e40cffb3f}{getKey}}()\ ==\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Kuala\_Lumpur"{}});}
+\DoxyCodeLine{00035\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{void}\ getKeyTest2()\ \{}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ v\ (\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Chocolate\_brownie"{}});}
+\DoxyCodeLine{00040\ \ \ \ \ assert(v.\mbox{\hyperlink{class_vertex_a99274bf216329158aeddb01e40cffb3f}{getKey}}()\ ==\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Chocolate\_brownie"{}});}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ setParentTest1()\{}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}\ (\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Chicago"{}});}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *u\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Kuala\_Lumpur"{}});}
+\DoxyCodeLine{00047\ \ \ \ \ v-\/>\mbox{\hyperlink{class_vertex_af5e202fefe210f7ca9a9bea591e31881}{setParent}}(u);}
+\DoxyCodeLine{00048\ \ \ \ \ assert(u\ ==\ v-\/>\mbox{\hyperlink{class_vertex_ad6ec5e55cca3b6005e71c826232a654f}{getParent}}());}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{delete}(v);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{delete}(u);}
+\DoxyCodeLine{00051\ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{void}\ setParentTest2()\{}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Chicago"{}});}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *u\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Kuala\_Lumpur"{}});}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *p\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Malaysian\_Mandarin"{}});}
+\DoxyCodeLine{00057\ \ \ \ \ v-\/>\mbox{\hyperlink{class_vertex_af5e202fefe210f7ca9a9bea591e31881}{setParent}}(u);}
+\DoxyCodeLine{00058\ \ \ \ \ assert(p\ !=\ v-\/>\mbox{\hyperlink{class_vertex_ad6ec5e55cca3b6005e71c826232a654f}{getParent}}());}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{delete}(v);}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{delete}(u);}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{delete}(p);}
+\DoxyCodeLine{00062\ \}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{keywordtype}{void}\ getParentTest()\{}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}();}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *u\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Hawaii"{}},\ v,\ \textcolor{stringliteral}{"{}white"{}});}
+\DoxyCodeLine{00067\ \ \ \ \ assert\ (u-\/>\mbox{\hyperlink{class_vertex_ad6ec5e55cca3b6005e71c826232a654f}{getParent}}()\ ==\ v);}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{delete}(v);}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{delete}(u);}
+\DoxyCodeLine{00070\ \}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{void}\ set\_get\_DistanceTest()\{}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}();}
+\DoxyCodeLine{00074\ \ \ \ \ assert\ (v-\/>\mbox{\hyperlink{class_vertex_a5c391478f6fc9302bea57ae4daa18c81}{getDistance}}()\ ==\ 0);}
+\DoxyCodeLine{00075\ \ \ \ \ v-\/>\mbox{\hyperlink{class_vertex_a9c76073d365ea04f134a4ac1a8d505e8}{setDistance}}(5);}
+\DoxyCodeLine{00076\ \ \ \ \ assert\ (v-\/>\mbox{\hyperlink{class_vertex_a5c391478f6fc9302bea57ae4daa18c81}{getDistance}}()\ ==\ 5);}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{delete}(v);}
+\DoxyCodeLine{00078\ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{comment}{//WikiTree\ Class\ Unit\ Tests:}}
+\DoxyCodeLine{00082\ \textcolor{comment}{//\ Unit\ Tests\ 9\ -\/\ 11:}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{keywordtype}{void}\ getRootTest1()\{}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Pacific\_Ocean"{}});}
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{class_wiki_tree}{WikiTree}}\ test\ (v);}
+\DoxyCodeLine{00087\ \ \ \ \ assert(v\ ==\ test.getRoot());}
+\DoxyCodeLine{00088\ \}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keywordtype}{void}\ getRootTest2()\{}
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Pacific\_Ocean"{}});}
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *u\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Arctic\_Ocean"{}});}
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{class_wiki_tree}{WikiTree}}\ test\ (v);}
+\DoxyCodeLine{00094\ \ \ \ \ assert(u\ !=\ test.getRoot());}
+\DoxyCodeLine{00095\ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{keywordtype}{void}\ buildWikiTreeTest()\{}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *test\_root\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Pittsburgh\_Steelers"{}});}
+\DoxyCodeLine{00099\ \ \ \ \ \mbox{\hyperlink{class_wiki_tree}{WikiTree}}\ test\ (test\_root);}
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *end\ =\ test.buildWikiTree(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/New\_York\_City"{}});}
+\DoxyCodeLine{00101\ \ \ \ \ assert(end-\/>\mbox{\hyperlink{class_vertex_a99274bf216329158aeddb01e40cffb3f}{getKey}}()\ ==\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/New\_York\_City"{}});}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{comment}{//WikiLadderTests}}
+\DoxyCodeLine{00106\ \textcolor{comment}{//\ Unit\ Tests\ 12\ -\/\ 14}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{keywordtype}{void}\ getPathTest()\{}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{class_wiki_ladder}{WikiLadder}}\ test\ (\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Pittsburgh\_Steelers"{}},\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/New\_York\_City"{}});}
+\DoxyCodeLine{00111\ \ \ \ \ test.Play();}
+\DoxyCodeLine{00112\ \ \ \ \ assert(test.getPath()[0]\ ==\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/New\_York\_City"{}});}
+\DoxyCodeLine{00113\ \ \ \ \ assert(test.getPath()[1]\ ==\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Philadelphia\_Eagles"{}});}
+\DoxyCodeLine{00114\ \ \ \ \ assert(test.getPath()[2]\ ==\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Pittsburgh\_Steelers"{}});}
+\DoxyCodeLine{00115\ \}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \textcolor{keywordtype}{void}\ PlayTest1()\{}
+\DoxyCodeLine{00118\ \ \ \ \ \mbox{\hyperlink{class_wiki_ladder}{WikiLadder}}\ test\ (\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Pittsburgh\_Steelers"{}},\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/New\_York\_City"{}});}
+\DoxyCodeLine{00119\ \ \ \ \ test.Play();}
+\DoxyCodeLine{00120\ \ \ \ \ assert(test.getPathLength()\ ==\ 2);}
+\DoxyCodeLine{00121\ \}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{keywordtype}{void}\ PlayTest2()\{}
+\DoxyCodeLine{00124\ \ \ \ \ \mbox{\hyperlink{class_wiki_ladder}{WikiLadder}}\ test\ (\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Pickle"{}},\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Berlin"{}});}
+\DoxyCodeLine{00125\ \ \ \ \ test.Play();}
+\DoxyCodeLine{00126\ \ \ \ \ assert(test.getPathLength()\ ==\ 3);}
+\DoxyCodeLine{00127\ \}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \textcolor{comment}{//Parser\ Class\ Unit\ Tests}}
+\DoxyCodeLine{00131\ \textcolor{comment}{//\ Unit\ Test:\ 15\ -\/\ 18}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{void}\ searchWikiPageTest1()\{}
+\DoxyCodeLine{00134\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}\ (\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Foot\_Locker\_Cross\_Country\_Championships"{}});}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \mbox{\hyperlink{class_parser}{Parser}}\ p\ (v);}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ std::vector<std::string>\ path\ =\ p.searchWikiPage();}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ assert(path.size()\ ==\ 16);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{delete}(v);}
+\DoxyCodeLine{00143\ \}}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{keywordtype}{void}\ searchWikiPageTest2()\{}
+\DoxyCodeLine{00146\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}\ (\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Tour\_of\_California"{}});}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{class_parser}{Parser}}\ p\ (v);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ std::vector<std::string>\ path\ =\ p.searchWikiPage();}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \ \ \ \ assert(path.size()\ ==\ 41);}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keyword}{delete}(v);}
+\DoxyCodeLine{00155\ \}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \textcolor{keywordtype}{void}\ setPageTest()\{}
+\DoxyCodeLine{00158\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}\ (\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Tour\_of\_California"{}});}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{class_parser}{Parser}}\ p\ (v);}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *u\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}\ (\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Tour\_of\_California"{}});}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ p.setPage(u);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \ \ \ \ assert(u\ ==\ p.getPage());}
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keyword}{delete}(v);}
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keyword}{delete}(u);}
+\DoxyCodeLine{00169\ \}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \textcolor{keywordtype}{void}\ getPageTest()\{}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_vertex}{Vertex}}(\textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Peanut\_butter"{}});}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \ \ \ \ \mbox{\hyperlink{class_parser}{Parser}}\ p(v);}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \ \ \ \ assert(p.getPage()-\/>\mbox{\hyperlink{class_vertex_a99274bf216329158aeddb01e40cffb3f}{getKey}}()\ ==\ \textcolor{stringliteral}{"{}https://en.wikipedia.org/wiki/Peanut\_butter"{}});}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keyword}{delete}(v);}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \}}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
